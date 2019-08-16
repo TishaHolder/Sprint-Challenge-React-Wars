@@ -1,5 +1,11 @@
 import React from 'react';
 import './App.css';
+import background from "./sw-bg.jpg";
+import StarWarsInfo from "./components/StarWarsInfo.js";
+import styled from "styled-components";
+import { Grid, Form, Input, TextArea, Button, Select } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.css';
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,9 +16,14 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <Container>
+      <AppContainer>
+        <MainHeading>React Wars</MainHeading>
+
+        <StarWarsInfo />
+
+      </AppContainer>
+    </Container>
   );
 }
 
